@@ -1,6 +1,8 @@
 package classes;
 
-public class Aquila extends AbstractAnimal {
+import interfaces.Volante;
+
+public class Aquila extends AbstractAnimal implements Volante {
 
     private String featherColor;
 
@@ -26,6 +28,14 @@ public class Aquila extends AbstractAnimal {
     public void mangia() {
         this.isHangry = false;
         System.out.println("l'aquila " + this.name + " ha mangiato un topo");
+    }
+
+    private void vola() {
+        System.out.println(this.name + " sta volando!!");
+    }
+
+    public void faiVolare(Volante Aquila) {
+        vola();
     }
 
 }

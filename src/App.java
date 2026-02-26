@@ -5,10 +5,10 @@ import classes.Passerotto;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Passerotto cip = new Passerotto("cip", 2, "marrone");
-        Cane nuvola = new Cane("nuvola", 4, "bianco");
+        Passerotto cip = new Passerotto("Cip", 2, "marrone");
+        Cane nuvola = new Cane("Nuvola", 4, "bianco");
         Delfino curioso = new Delfino("curioso", 0);
-        Aquila tilde = new Aquila("name", 2, "marrone e bianco");
+        Aquila tilde = new Aquila("Tilde", 2, "marrone e bianco");
 
         System.out.println(nuvola.getName() + " sta dormendo");
 
@@ -47,6 +47,12 @@ public class App {
         System.out.println(tilde.getName() + " sta facendo rumore");
 
         tilde.verso();
+
+        System.out.println("----------------------");
+
+        tilde.faiVolare(tilde);
+
+        curioso.faiNuotare(curioso);
 
     }
 }

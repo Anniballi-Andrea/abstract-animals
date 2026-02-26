@@ -1,6 +1,8 @@
 package classes;
 
-public class Passerotto extends AbstractAnimal {
+import interfaces.Volante;
+
+public class Passerotto extends AbstractAnimal implements Volante {
     private String featherColor;
 
     public Passerotto(String name, int numberOfLegs, String featherColor) {
@@ -25,5 +27,14 @@ public class Passerotto extends AbstractAnimal {
     public void mangia() {
         this.isHangry = false;
         System.out.println("il passerotto " + this.name + " ha mangiato un verme");
+    }
+
+    private void vola() {
+        System.out.println(this.name + " sta volando!!");
+    }
+
+    @Override
+    public void faiVolare(Volante Passerotto) {
+        vola();
     }
 }

@@ -1,12 +1,14 @@
 package classes;
 
-public class Delfino extends AbstractAnimal {
+import interfaces.Nuotante;
+
+public class Delfino extends AbstractAnimal implements Nuotante {
 
     public Delfino(String name, int numberOfLegs) {
         super(name, numberOfLegs);
     }
 
-    public void nuota() {
+    private void nuota() {
         System.out.println("sto nuotando, splash splash");
     }
 
@@ -19,5 +21,10 @@ public class Delfino extends AbstractAnimal {
     public void mangia() {
         this.isHangry = false;
         System.out.println("il delfino " + this.name + " ha mangiato le mie big fruit");
+    }
+
+    @Override
+    public void faiNuotare(Nuotante Delfino) {
+        nuota();
     }
 }
