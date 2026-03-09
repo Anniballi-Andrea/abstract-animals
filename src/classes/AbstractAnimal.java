@@ -31,9 +31,7 @@ public abstract class AbstractAnimal {
         System.out.println("Zzz");
     }
 
-    public void mangia() {
-        this.isHangry = false;
-    }
+    public abstract void mangia();
 
     public abstract void verso();
 

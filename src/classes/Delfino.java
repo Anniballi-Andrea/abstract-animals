@@ -9,7 +9,7 @@ public class Delfino extends AbstractAnimal implements Nuotante {
     }
 
     private void nuota() {
-        System.out.println("sto nuotando, splash splash");
+        System.out.println(this.name + " stà nuotando, splash splash");
     }
 
     @Override

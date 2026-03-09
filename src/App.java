@@ -52,6 +52,8 @@ public class App {
 
         tilde.faiVolare(tilde);
 
+        System.out.println("----------------------");
+
         curioso.faiNuotare(curioso);
 
     }
